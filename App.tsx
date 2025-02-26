@@ -1,11 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
+import React from 'react';
+import { StyleSheet, Image, Text, View } from 'react-native';
+import MainScreen from './components/mainScreen/MainScreen';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Image
+        source={require('./assets/background-top.svg')}
+        style={{ width: '100%', height: '50%', }}
+      />
+      <Image
+        source={require('./assets/background-top.svg')}
+        style={{ width: '100%', height: '50%', transform: [{ rotate: '180deg' }] }}
+      />
+      <MainScreen />
     </View>
   );
 }
@@ -13,7 +22,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
     alignItems: 'center',
     justifyContent: 'center',
   },
