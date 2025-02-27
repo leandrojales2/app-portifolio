@@ -168,7 +168,7 @@ export default function MainScreen() {
                             style={skillScreenStyles.button}
                             onPress={() => {navigation.navigate('Home')}}
                         >
-                            <Text style={skillScreenStyles.buttonText}>Fale Comigo</Text>
+                            <Text style={skillScreenStyles.buttonText}>Contatos</Text>
                         </TouchableOpacity>
                     </LinearGradient>
                 </View>

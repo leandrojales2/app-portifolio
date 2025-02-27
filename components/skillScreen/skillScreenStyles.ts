@@ -15,7 +15,7 @@ const mainScreenStyles = StyleSheet.create({
         borderWidth: 3,
         borderColor: 'white',
         borderRadius: 10,
-        padding: 10,
+        padding: 15,
     },
     containerImage: {
         width: '100%',
@@ -45,7 +45,7 @@ const mainScreenStyles = StyleSheet.create({
     },
     textStar: {
         color: 'white',
-        fontSize: 15,
+        fontSize: 14,
         textAlign: 'left',
         padding: 5,
     },
@@ -58,22 +58,23 @@ const mainScreenStyles = StyleSheet.create({
         padding: 1,
     },
     star:{ 
-        width: 28, 
-        height: 28,
+        width: 27, 
+        height: 27,
         position: 'relative', 
     },
     containerButton: {
         width: '100%',
         height: '30%',
-        justifyContent: 'center',
+        justifyContent: 'flex-end',
         alignItems: 'center',
+        paddingBottom: 30,
     },
     button: {
         width: '65%',
         height: '20%',
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 10,
+        borderRadius: 10, 
     },
     buttonText: {
         color: 'white',
