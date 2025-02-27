@@ -1,30 +1,41 @@
 
-import React from 'react';
-import { StyleSheet, Image, View } from 'react-native';
+import * as React from 'react';
+import { createStaticNavigation } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import SkillScreen from './components/skillScreen/SkillScreen';
 import MainScreen from './components/mainScreen/MainScreen';
 
-export default function App() {
+function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Image
-        source={require('./assets/background-top.svg')}
-        style={{ width: '100%', height: '50%', }}
-      />
-      <Image
-        source={require('./assets/background-top.svg')}
-        style={{ width: '100%', height: '50%', transform: [{ rotate: '180deg' }] }}
-      />
-      <SkillScreen />
-    </View>
+      <MainScreen></MainScreen>
+
+  );
+}
+function ScreenSkill() {
+  return (
+      <SkillScreen></SkillScreen>
+
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#000',
-    alignItems: 'center',
-    justifyContent: 'center',
+const RootStack = createNativeStackNavigator({
+  initialRouteName: 'Home',
+  screenOptions: {
+    headerShown: false,
+    headerMode: 'none',
   },
-});
+  screens: {   
+    Home: HomeScreen,
+    Skills: ScreenSkill,
+  },
+})
+
+const Navigation = createStaticNavigation(RootStack);
+
+export default function App() {
+  return (      
+    <Navigation />
+  );
+}
+
