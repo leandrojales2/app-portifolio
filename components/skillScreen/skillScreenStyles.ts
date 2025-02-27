@@ -1,6 +1,13 @@
 import { StyleSheet } from 'react-native';
 
 const mainScreenStyles = StyleSheet.create({
+    
+    container: {
+        flex: 1,
+        backgroundColor: '#000',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
     main: {
         width: '90%',
         height: '90%',
@@ -29,7 +36,7 @@ const mainScreenStyles = StyleSheet.create({
         padding: 10,
         marginBottom: 20,
     },
-    container: {
+    hability: {
         width: '100%',
         height: '40%',
         flexDirection: 'row',

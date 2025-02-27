@@ -1,6 +1,13 @@
 import { StyleSheet } from 'react-native';
+import BackgroundScreen from '../backgroundScreen/BackgroundScreen';
 
 const mainScreenStyles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#000',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
     main: {
         width: '90%',
         height: '90%',
@@ -17,8 +24,8 @@ const mainScreenStyles = StyleSheet.create({
         justifyContent: 'center',
     },
     image:{ 
-        width: '50%', 
-        height: '100%',
+        width: '40%', 
+        height: '90%',
         position: 'relative',
         borderRadius: '50%', 
     },
