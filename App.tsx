@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { StyleSheet, Image, Text, View } from 'react-native';
+import { StyleSheet, Image, View } from 'react-native';
+import SkillScreen from './components/skillScreen/SkillScreen';
 import MainScreen from './components/mainScreen/MainScreen';
 
 export default function App() {
@@ -14,7 +15,7 @@ export default function App() {
         source={require('./assets/background-top.svg')}
         style={{ width: '100%', height: '50%', transform: [{ rotate: '180deg' }] }}
       />
-      <MainScreen />
+      <SkillScreen />
     </View>
   );
 }

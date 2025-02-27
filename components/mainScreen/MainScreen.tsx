@@ -3,9 +3,11 @@ import { Linking } from 'react-native';
 import { Image, TouchableOpacity, Text, View } from 'react-native';
 
 import mainScreenStyles from './mainScreenstyles';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default function MainScreen() {
     return (
+        
         <View style={mainScreenStyles.main}>
             <View style={mainScreenStyles.containerImage}>
                 <Image
@@ -49,6 +51,16 @@ export default function MainScreen() {
                         style={mainScreenStyles.iconEmail}
                     />
                 </TouchableOpacity>
+            </View>
+            <View style={mainScreenStyles.containerButton} >
+                <LinearGradient colors={['#7bb7d5', '#489ec9', '#0e74a7']} style={mainScreenStyles.button}>
+                    <TouchableOpacity
+                        style={mainScreenStyles.button}
+                        onPress={() => Linking.openURL('https://example.com')}
+                    >
+                        <Text style={mainScreenStyles.buttonText}>Habilidades</Text>
+                    </TouchableOpacity>
+                </LinearGradient>
             </View>
         </View>
     );

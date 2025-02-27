@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const mainScreenStyles = StyleSheet.create({
     main: {
-        width: '80%',
+        width: '90%',
         height: '90%',
         position: 'absolute',
         borderWidth: 3,
@@ -36,7 +36,7 @@ const mainScreenStyles = StyleSheet.create({
     },
     containerIcon: {
         width: '100%',
-        height: '40%',
+        height: '30%',
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
@@ -59,7 +59,25 @@ const mainScreenStyles = StyleSheet.create({
     iconEmail: {
         width: 50,
         height: 50,
-    }
+    },
+    containerButton: {
+        width: '100%',
+        height: '30%',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    button: {
+        width: '65%',
+        height: '20%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 10,
+    },
+    buttonText: {
+        color: 'white',
+        fontSize: 15,
+        fontWeight: 'bold',
+    },
 
 });
 
